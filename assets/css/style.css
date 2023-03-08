@@ -1,24 +1,23 @@
-body {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lemonchiffon;
-}
+* {
+    box-sizing: border-box;
+  }
+  body {
+  margin: 0; 
+  padding: 0;
+  }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
+    background-color: green;
 }
 
-nav {
+nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
-    background-color: darkblue;
-    color: ivory;
 }
 
 h1 {
@@ -28,5 +27,19 @@ h1 {
 h2 {
     margin: 2%; 
     font-size: 200%
+}
+section {
+    display: flex;
+    align-items: center;
+}
+section h2 {
+    flex-basis: 20%;
+}
+section .content {
+    flex-basis: 80%;
+}
+footer {
+    text-align: center;
+    width: 100%;
 }
 
